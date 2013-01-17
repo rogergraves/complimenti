@@ -11,3 +11,29 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+    background-image: url(/assets/vellum-plain-background-repeating.jpg);
+    background-repeat: repeat;
+
+}
+
+.center {
+    text-align: center;
+}
+
+.titles {
+    color: #944208;
+}
+
+.tree {
+    background-image: url(/assets/tree.jpg);
+    width: 450px;
+    height: 450px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border-color: #bf4400;
+    border-style: solid;
+
+}
+
