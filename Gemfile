@@ -6,6 +6,7 @@ gem 'heroku'                                      # Heroku hosting
 gem 'jquery-rails'                                # Include jquery assets in pipeline
 gem "jquery-ui-rails", "~> 2.0.0"                 # More jquery goodies
 gem "activerecord-postgres-hstore", "~> 0.4.1"    # allow hstore fields to replace traditional table fields
+gem "twitter-bootstrap-rails", "~> 2.2.0"         # Integrates Bootstrap CSS toolkit for Rails 3.1 Asset Pipeline
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
