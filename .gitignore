@@ -21,3 +21,6 @@
 
 # Rubymine crap
 .idea*
+
+# DHH Tests
+/test/*
