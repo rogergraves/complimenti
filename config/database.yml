@@ -1,0 +1,26 @@
+development:
+    adapter: postgresql
+    encoding: unicode
+    database: complimenti_development
+    pool: 5
+    username: postgres
+    password:
+    host: localhost
+
+test:
+    adapter: postgresql
+    encoding: unicode
+    database: complimenti_test
+    pool: 5
+    username: postgres
+    password:
+    host: localhost
+
+production:
+    adapter: postgresql
+    encoding: unicode
+    database: complimenti_production
+    pool: 5
+    username: postgres
+    password:
+    host: localhost
