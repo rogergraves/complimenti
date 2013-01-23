@@ -26,8 +26,16 @@
             <br><br>
 
           </div>
-          <div class="item">Second</div>
-          <div class="item">Third</div>
+          <div class="item">
+            <%= form_for @respondent, :html => {:class => "form"}, :remote => true do |f| %>
+              <%= f.label :email, "Please enter your email address" %>
+              <%= f.text_field :email, :placeholder => "my_name@something.com" %>
+            <% end %>
+
+          </div>
+          <div class="item">
+            <h1>Finished!</h1>
+            Thank you!!!!</div>
         </div>
         <!-- Carousel nav -->
         <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
