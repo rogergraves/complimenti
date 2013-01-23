@@ -1,16 +1,45 @@
 
 <div class="row-fluid">
   <div class="span12 center">
-    <h1 class="titles">Welcome</h1>
+    <h2 class="titles">Set up your Complimenti Tree</h2>
   </div>
-  <div class="span12 center">
-     <%= image_tag("/assets/polaroid.png") %>
+  <div class="row">
+    <div class="span6">
+      <%= image_tag("/assets/polaroid.png") %>
+    </div>
+    <div class="span6 center">
+      <div id="myCarousel" class="carousel slide">
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+          <div class="active item">
+            <br><br>
+            <%= form_for @respondent, :html => {:class => "form"}, :remote => true do |f| %>
+              <%= f.label :event, "What kind of event will this be?" %>
+              <%= f.text_field :event, :placeholder => "event type" %>
+              <br><br>
+              <%= f.label :number_of_donors, "How many invitations will you need?" %>
+              <%= f.text_field :number_of_donors, :placeholder => "# of invitees" %>
+            <% end %>
+            <br><br>
+            <p class="fine-print">There is a 5% fee on all transactions.</p>
+
+            <br><br>
+
+          </div>
+          <div class="item">Second</div>
+          <div class="item">Third</div>
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+      </div>
+
+    </div>
+
   </div>
+
   <div class="span12 center">
-    <h2 class="titles">How much do you want to grow?</h2>
-    <form>
-      <input type="text" placeholder="$ 0.00" class="money">
-    </form>
+
   </div>
 </div>
 

@@ -44,3 +44,24 @@ body {
     text-align: center;
 }
 
+.fine-print {
+    font-size: 10px;
+}
+
+.carousel {
+    margin-top: 40%;
+    height: 400px;
+}
+
+.carousel-inner {
+    background-color: #fff;
+    border-style: solid;
+    border-color: #944208;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.carousel-control {
+    display: none;
+}
+

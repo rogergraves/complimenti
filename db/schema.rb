@@ -11,15 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130117055108) do
+ActiveRecord::Schema.define(:version => 20130122072248) do
 
   create_table "respondents", :force => true do |t|
     t.string   "email"
     t.string   "source"
-    t.integer  "amount"
     t.string   "event"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+    t.string   "number_of_donors"
   end
 
 end

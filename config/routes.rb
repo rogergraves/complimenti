@@ -1,10 +1,11 @@
 Complimenti::Application.routes.draw do
-  get "signup/index"
 
-  get "signup/create"
+  get "respondent/update"
 
-  get "signup/edit"
+  resources :signup
 
-  root :to => "signup#index"
+  resources :respondent
+
+  root :to => "signup#new"
 
 end
