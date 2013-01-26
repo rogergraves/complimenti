@@ -19,7 +19,26 @@ body {
 }
 
 .center {
-    text-align: center;
+    align: center;
+}
+
+.copy {
+    text-align: left;
+    margin-top: 10%;
+}
+
+.content-inner {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.instructions {
+    display: block;
+    text-align: left;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .titles {
@@ -49,8 +68,8 @@ body {
 }
 
 .carousel {
-    margin-top: 40%;
-    height: 400px;
+    margin-top: 10%;
+    height: 300px;
 }
 
 .carousel-inner {
