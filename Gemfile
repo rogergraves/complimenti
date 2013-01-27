@@ -17,5 +17,9 @@ end
 group :development, :test do
   gem 'annotate'                    # Allows posting of database schema comments
   gem 'awesome_print'               # Nicely formatted data structures in console, for example "ap User.first"
+  gem 'rspec-rails'                 # TDD testing in rails
+  #gem 'capybara'                    # Integration selenium testing
+  #get 'launchy'                     # Support capybara javascript
+  #get 'database_cleaner'            # Cleans out DB after tests in browser
 end
 
