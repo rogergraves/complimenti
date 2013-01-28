@@ -1,0 +1,16 @@
+respondent_update GET    /respondent/update(.:format)   respondent#update
+     signup_index GET    /signup(.:format)              signup#index
+                  POST   /signup(.:format)              signup#create
+       new_signup GET    /signup/new(.:format)          signup#new
+      edit_signup GET    /signup/:id/edit(.:format)     signup#edit
+           signup GET    /signup/:id(.:format)          signup#show
+                  PUT    /signup/:id(.:format)          signup#update
+                  DELETE /signup/:id(.:format)          signup#destroy
+ respondent_index GET    /respondent(.:format)          respondent#index
+                  POST   /respondent(.:format)          respondent#create
+   new_respondent GET    /respondent/new(.:format)      respondent#new
+  edit_respondent GET    /respondent/:id/edit(.:format) respondent#edit
+       respondent GET    /respondent/:id(.:format)      respondent#show
+                  PUT    /respondent/:id(.:format)      respondent#update
+                  DELETE /respondent/:id(.:format)      respondent#destroy
+             root        /                              signup#new
