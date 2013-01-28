@@ -3,6 +3,11 @@ $(document).ready(function() {
         interval: false
     })
 
+    $( "#event_type" ).autocomplete({ source: [ "Wedding", "Bar Mitzvah", "Graduation", "Birthday" ]
+        , minLength: 0 }).focus(function () {
+        $(this).autocomplete("search");
+    });
+
     var activateSecondSlide = function() {
        if($('#respondent_event').val() && $('#respondent_number_of_donors').val()) {
             $('.carousel-control.right').show();

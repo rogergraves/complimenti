@@ -16,7 +16,7 @@
             <div class="content-inner">
               <%= form_for @respondent, :html => {:class => "form"}, :remote => true do |f| %>
                 <%= f.label :event, "What kind of event will this be?" %>
-                <%= f.text_field :event, :placeholder => "event type" %>
+                <%= f.text_field :event, :placeholder => "event type", :id => "event_type" %>
                 <br><br>
                 <%= f.label :number_of_donors, "How many invitations will you need?" %>
                 <%= f.text_field :number_of_donors, :placeholder => "# of invitees" %>
