@@ -9,5 +9,10 @@ describe "GET /" do
     end
   end
 
-  context "coming from ad"
+  context "coming from ad" do
+    it "should create a new Respondent entry with tracking info attached" do
+      get "/?t=stupid_facebook_ad"
+      Respondent.first.source.should == 'stupid_facebook_ad'
+    end
+  end
 end

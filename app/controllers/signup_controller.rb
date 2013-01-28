@@ -1,6 +1,6 @@
 class SignupController < ApplicationController
   def new
-    @respondent = Respondent.create()
+    @respondent = Respondent.create(:source => params[:t])
 
     render "index"
     logger.info "\n\n!!!!!!!!!!!!!!!!!!! signup_controller#new called! params: #{params.inspect} !!!!!!!!!!!!!!!!!!!!!!!!!!\n\n"
