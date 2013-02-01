@@ -15,11 +15,11 @@
           <div class="active item">
             <div class="content-inner">
               <%= form_for @respondent, :html => {:class => "form"}, :remote => true do |f| %>
-                <%= f.label :event, "What kind of event will this be?" %>
-                <%= f.text_field :event, :placeholder => "event type", :id => "event_type" %>
-                <br><br>
-                <%= f.label :number_of_donors, "How many invitations will you need?" %>
-                <%= f.text_field :number_of_donors, :placeholder => "# of invitees" %>
+                  <%= f.label :event, "What kind of event will this be?" %>
+                  <%= f.text_field :event, :placeholder => "event type", :id => "event_type" %>
+                  <br><br>
+                  <%= f.label :number_of_donors, "How many invitations will you need?" %>
+                  <%= f.text_field :number_of_donors, :placeholder => "# of invitees" %>
               <% end %>
               <br><br>
               <p class="fine-print">There is a 5% fee on all transactions.</p>
@@ -28,9 +28,9 @@
           <div class="item">
             <div class="content-inner">
               <%= form_for @respondent, :html => {:class => "form"}, :remote => true do |f| %>
-                <%= f.label :email, "Please enter your email address" %>
-                <%= f.text_field :email, :placeholder => "my_name@something.com" %>
-                <%= f.submit %>
+                  <%= f.label :email, "Please enter your email address" %>
+                  <%= f.text_field :email, :placeholder => "my_name@something.com" %>
+                  <%= f.submit "Create New Post" %>
               <% end %>
             </div>
 
@@ -40,27 +40,27 @@
               <h1>Finished!</h1>
               Thank you!!!!
             </div>
+          </div>
+          <!-- Carousel nav -->
+          <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
         </div>
-        <!-- Carousel nav -->
-        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-      </div>
-      <div class="instructions">
-        <p>How does it work?</p>
-        <ol>
-          <li>We give you a page with a baby tree.</li>
-          <li>You send this page to your loved ones who can give you a cash gift.</li>
-          <li>With each gift your tree grows a branch and you can see your gift with a personalized message.</li>
-        </ol>
+        <div class="instructions">
+          <p>How does it work?</p>
+          <ol>
+            <li>We give you a page with a baby tree.</li>
+            <li>You send this page to your loved ones who can give you a cash gift.</li>
+            <li>With each gift your tree grows a branch and you can see your gift with a personalized message.</li>
+          </ol>
+
+        </div>
 
       </div>
 
     </div>
 
-  </div>
+    <div class="span12 center">
 
-  <div class="span12 center">
-
+    </div>
   </div>
-</div>
 
