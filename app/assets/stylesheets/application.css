@@ -30,6 +30,11 @@ body {
     margin-left: 2%;
 }
 
+.next-button {
+    float: right;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
 
 .center {
     align: center;
@@ -83,10 +88,6 @@ body {
     -moz-border-radius: 10px;
     border-radius: 10px;
     box-shadow: 0px 0px 5px #000000;
-}
-
-.carousel-control {
-    display: none;
 }
 
 .ui-helper-hidden-accessible{ display:none}

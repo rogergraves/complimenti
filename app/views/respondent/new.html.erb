@@ -1,3 +1,4 @@
+<%= form_for @respondent, :html => {:class => "form"}, :remote => true do |f| %>
 
 <div class="row-fluid">
   <div class="row">
@@ -17,35 +18,36 @@
         <div class="carousel-inner">
           <div class="active item">
             <div class="content-inner">
-              <%= form_for @respondent, :html => {:class => "form"}, :remote => true do |f| %>
-                  <%= f.label :event, "What kind of event will this be?" %>
-                  <%= f.text_field :event, :placeholder => "event type", :id => "event_type" %>
-                  <br><br>
-                  <%= f.label :number_of_donors, "How many invitations will you need?" %>
-                  <%= f.text_field :number_of_donors, :placeholder => "# of invitees" %>
-              <% end %>
-              <br><br>
+             <p>Giving and receiving gifts shouldn't feel like a bank transaction.</p>
+              <p><span class="complimenti-title">COMPLIMENTI.CO</span> lets people receive cash gifts in a beautiful new way.</p>
+              <div class="next-button">
+                <a href="#myCarousel" data-slide="next"><%= image_tag('/assets/next_button.png') %></a>
+              </div>
             </div>
           </div>
           <div class="item">
             <div class="content-inner">
-              <%= form_for @respondent, :html => {:class => "form"}, :remote => true do |f| %>
-                  <%= f.label :email, "Please enter your email address" %>
-                  <%= f.text_field :email, :placeholder => "my_name@something.com" %>
-                  <%= f.submit "Create New Post" %>
-              <% end %>
+              <%= f.label :event, "What kind of event will this be?" %>
+              <%= f.text_field :event, :placeholder => "event type", :id => "event_type" %>
+              <br><br>
+              <%= f.label :number_of_donors, "How many invitations will you need?" %>
+              <%= f.text_field :number_of_donors, :placeholder => "# of invitees" %>
+              <div class="next-button">
+                <a href="#myCarousel" data-slide="next"><%= image_tag('/assets/next_button.png') %></a>
+              </div>
             </div>
 
           </div>
           <div class="item">
             <div class="content-inner">
-              <h1>Finished!</h1>
-              Thank you!!!!
+              <%= f.label :email, "Please enter your email address" %>
+              <%= f.text_field :email, :placeholder => "my_name@something.com" %>
+              <%= f.submit "Create New Post" %>
             </div>
           </div>
           <!-- Carousel nav -->
-          <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-          <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+          <!--<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>-->
+          <!--<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>-->
         </div>
       </div>
     </div>
@@ -53,3 +55,5 @@
   </div>
   <div class="span12"></div>
 </div>
+
+<% end %>
