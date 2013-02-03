@@ -13,9 +13,9 @@
  */
 
 body {
-    background-image: url(/assets/vellum-plain-background-repeating.jpg);
-    background-repeat: repeat;
-
+    background-color: #2d7464;
+    background-image: url('/assets/bg_shader.png'), url('/assets/outer_bg.jpg');
+    background-repeat: repeat-x, repeat;
 }
 
 .center {
