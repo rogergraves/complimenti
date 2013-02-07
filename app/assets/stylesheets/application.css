@@ -18,6 +18,16 @@ body {
     background-repeat: repeat-x, repeat;
 }
 
+.title-setup {
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.title {
+    font-family: 'Londrina Shadow', cursive;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
 .row-fluid {
     -moz-border-radius: 15px;
     border-radius: 15px;
