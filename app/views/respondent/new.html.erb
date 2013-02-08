@@ -34,17 +34,18 @@
               <br><br>
               <%= f.label :number_of_donors, "How many invitations will you need?" %>
               <%= f.text_field :number_of_donors, :placeholder => "# of invitees" %>
+              <br><br>
               <div class="next-button">
                 <a href="#myCarousel" data-slide="next"><%= image_tag('/assets/next_button.png') %></a>
               </div>
             </div>
-
           </div>
           <div class="item">
             <div class="content-inner">
               <%= f.label :email, "Please enter your email address" %>
               <%= f.text_field :email, :placeholder => "my_name@something.com" %>
-              <%= f.submit "Create New Post" %>
+              <br><br>
+              <%= f.submit("", :type => :image, :src => "/assets/next_button.png", :class => "next-button")  %>
             </div>
           </div>
           <!-- Carousel nav -->
