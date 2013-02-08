@@ -23,7 +23,7 @@
              <p>Giving and receiving gifts shouldn't feel like a bank transaction.</p>
               <p><span class="complimenti-title">COMPLIMENTI.CO</span> lets people receive cash gifts in a beautiful new way.</p>
               <div class="next-button">
-                <a href="#myCarousel" data-slide="next"><%= image_tag('/assets/next_button.png') %></a>
+                <a href="#myCarousel" data-slide="next"><%= image_tag('/assets/next_button.png', :id => 'button_1') %></a>
               </div>
             </div>
           </div>
@@ -36,7 +36,7 @@
               <%= f.text_field :number_of_donors, :placeholder => "# of invitees" %>
               <br><br>
               <div class="next-button">
-                <a href="#myCarousel" data-slide="next"><%= image_tag('/assets/next_button.png') %></a>
+                <a href="#myCarousel" data-slide="next"><%= image_tag('/assets/next_button.png', :id => 'button_2') %></a>
               </div>
             </div>
           </div>
@@ -45,7 +45,7 @@
               <%= f.label :email, "Please enter your email address" %>
               <%= f.text_field :email, :placeholder => "my_name@something.com" %>
               <br><br>
-              <%= f.submit("", :type => :image, :src => "/assets/next_button.png", :class => "next-button")  %>
+              <%= f.submit("", :type => :image, :src => "/assets/next_button.png", :class => "next-button", :id => 'button_3')  %>
             </div>
           </div>
           <!-- Carousel nav -->
