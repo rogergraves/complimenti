@@ -4,9 +4,10 @@
   <div class="row">
     <div class="span1"></div>
     <div class="span11">
-      <h2><span class="title-setup">Set up your</span> <span
-      class="title">Complimenti
-        Tree</span></h2>
+      <h1>
+        <span class="title-setup">Set up your</span>
+        <span class="complimenti-title">Complimenti Tree</span>
+      </h1>
     </div>
   </div>
   <div class="row">
@@ -19,7 +20,7 @@
         <!-- Carousel items -->
         <div class="carousel-inner">
           <div class="active item">
-            <div class="content-inner">
+            <div class="content-inner main-text">
              <p>Giving and receiving gifts shouldn't feel like a bank transaction.</p>
               <p><span class="complimenti-title">COMPLIMENTI.CO</span> lets people receive cash gifts in a beautiful new way.</p>
               <div class="next-button">
@@ -29,10 +30,10 @@
           </div>
           <div class="item">
             <div class="content-inner">
-              <%= f.label :event, "What kind of event will this be?" %>
+              <%= f.label :event, "What kind of event will this be?", :class=>' main-text' %>
               <%= f.text_field :event, :placeholder => "event type", :id => "event_type" %>
               <br><br>
-              <%= f.label :number_of_donors, "How many invitations will you need?" %>
+              <%= f.label :number_of_donors, "How many invitations will you need?", :class=>' main-text' %>
               <%= f.text_field :number_of_donors, :placeholder => "# of invitees" %>
               <br><br>
               <div class="next-button">
@@ -42,7 +43,7 @@
           </div>
           <div class="item">
             <div class="content-inner">
-              <%= f.label :email, "Please enter your email address" %>
+              <%= f.label :email, "Please enter your email address", :class=>' main-text' %>
               <%= f.text_field :email, :placeholder => "my_name@something.com" %>
               <br><br>
               <%= f.submit("", :type => :image, :src => "/assets/next_button.png", :class => "next-button", :id => 'button_3')  %>
