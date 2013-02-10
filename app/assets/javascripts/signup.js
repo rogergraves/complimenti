@@ -1,35 +1,20 @@
 $(document).ready(function() {
     $('.carousel').carousel({
         interval: false
-    })
+    });
+
+    var makeButtonVisible = function() {
+        if($("#event_type").val() && $('#number_of_donors').val()) {
+            $('#button_2').show();
+        }
+    }
 
     $( "#event_type" ).autocomplete({ source: [ "Wedding", "Bar Mitzvah", "Graduation", "Birthday" ]
-        , minLength: 0 }).focus(function () {
+        , minLength: 0, change: makeButtonVisible, select: makeButtonVisible }).focus(function () {
         $(this).autocomplete("search");
     });
 
-    var activateSecondSlide = function() {
-       if($('#respondent_event').val() && $('#respondent_number_of_donors').val()) {
-            $('.carousel-control.right').show();
-       }
-    }
-
-    var submitFinalSlide = function() {
-        $('.carousel-control.right').show();
-    }
-
-    // First slide listeners
-    $('#respondent_number_of_donors').change(activateSecondSlide);
-    $('#respondent_event').change(activateSecondSlide);
-    $('#respondent_number_of_donors').keypress(activateSecondSlide);
-    $('#respondent_event').keypress(activateSecondSlide);
-
-    // Second slide listeners
-    $('#respondent_email').keypress(submitFinalSlide);
-
-
-    $('.carousel-control.right').click(function() {
-        $('.carousel-control.right').hide();
-    })
+    $("#number_of_donors").change(makeButtonVisible);
+    $("#number_of_donors").keyup(makeButtonVisible);
 
 });

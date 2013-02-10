@@ -34,10 +34,10 @@
               <%= f.text_field :event, :placeholder => "event type", :id => "event_type" %>
               <br><br>
               <%= f.label :number_of_donors, "How many invitations will you need?", :class=>' main-text' %>
-              <%= f.text_field :number_of_donors, :placeholder => "# of invitees" %>
+              <%= f.text_field :number_of_donors, :placeholder => "# of invitees", :id => 'number_of_donors' %>
               <br><br>
               <div class="next-button">
-                <a href="#myCarousel" data-slide="next"><%= image_tag('/assets/next_button.png', :id => 'button_2') %></a>
+                <a href="#myCarousel" data-slide="next"><%= image_tag('/assets/next_button.png', :id => 'button_2', :style => "display: none;") %></a>
               </div>
             </div>
           </div>
@@ -46,7 +46,7 @@
               <%= f.label :email, "Please enter your email address", :class=>' main-text' %>
               <%= f.text_field :email, :placeholder => "my_name@something.com" %>
               <br><br>
-              <%= f.submit("", :type => :image, :src => "/assets/next_button.png", :class => "next-button", :id => 'button_3')  %>
+              <%= f.submit("", :type => :image, :src => "/assets/next_button.png", :class => "next-button", :id => 'button_3', :style => "display: none;")  %>
             </div>
           </div>
           <!-- Carousel nav -->
