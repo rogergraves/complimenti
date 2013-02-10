@@ -21,4 +21,18 @@ $(document).ready(function() {
     $("#number_of_donors").keyup(makeButtonVisible);
     $("#email").keyup(makeButtonVisible);
 
+    $("#button_1").click(function() {
+        $("#carousel-inner").removeClass("red-border")
+        $("#carousel-inner").addClass("green-border")
+    });
+    $("#button_2").click(function() {
+        $("#carousel-inner").removeClass("green-border")
+        $("#carousel-inner").addClass("red-border")
+    });
+    $("#button_3").click(function() {
+        $('.carousel').carousel('next');
+        $("#carousel-inner").removeClass("red-border")
+        $("#carousel-inner").addClass("green-border")
+    });
+
 });

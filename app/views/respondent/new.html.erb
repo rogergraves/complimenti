@@ -18,7 +18,7 @@
     <div class="span5 center">
       <div id="myCarousel" class="carousel slide">
         <!-- Carousel items -->
-        <div class="carousel-inner">
+        <div class="carousel-inner red-border" id="carousel-inner">
           <div class="active item">
             <div class="content-inner main-text">
              <p>Giving and receiving gifts shouldn't feel like a bank transaction.</p>
@@ -39,6 +39,7 @@
               <div class="next-button">
                 <a href="#myCarousel" data-slide="next"><%= image_tag('/assets/next_button.png', :id => 'button_2', :style => "display: none;") %></a>
               </div>
+              <div class="fine-print">A 5% transaction fee  will be applied</div>
             </div>
           </div>
           <div class="item">
@@ -47,6 +48,11 @@
               <%= f.text_field :email, :placeholder => "my_name@something.com", :id => 'email' %>
               <br><br>
               <%= f.submit("", :type => :image, :src => "/assets/next_button.png", :class => "next-button", :id => 'button_3', :style => "display: none;")  %>
+            </div>
+          </div>
+          <div class="item">
+            <div class="content-inner">
+              Need some content here.
             </div>
           </div>
           <!-- Carousel nav -->
