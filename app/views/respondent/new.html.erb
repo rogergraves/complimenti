@@ -5,8 +5,8 @@
     <div class="span1"></div>
     <div class="span11">
       <h1>
-        <span class="title-setup">Set up your</span>
-        <span class="complimenti-title">Complimenti Tree</span>
+        <span class="title-setup">Set up your <span class="complimenti-title">Complimenti Tree</span></span>
+
       </h1>
     </div>
   </div>
@@ -30,7 +30,7 @@
           </div>
           <div class="item">
             <div class="content-inner">
-              <%= f.label :event, "What kind of event will this be?", :class=>' main-text' %>
+              <%= f.label :event, "Event type:", :class=>' main-text' %>
               <%= f.text_field :event, :placeholder => "event type", :id => "event_type" %>
               <br><br>
               <%= f.label :number_of_donors, "How many invitations will you need?", :class=>' main-text' %>
@@ -39,12 +39,12 @@
               <div class="next-button">
                 <a href="#myCarousel" data-slide="next"><%= image_tag('/assets/next_button.png', :id => 'button_2', :style => "display: none;") %></a>
               </div>
-              <div class="fine-print">A 5% transaction fee  will be applied</div>
             </div>
           </div>
           <div class="item">
             <div class="content-inner">
-              <%= f.label :email, "Please enter your email address", :class=>' main-text' %>
+              <p class="main-text"><span class="complimenti-title">Complimenti</span> is currently under development. We'll let you know once it launches.</p>
+              <%= f.label :email, "Email Address", :class=>' main-text' %>
               <%= f.text_field :email, :placeholder => "my_name@something.com", :id => 'email' %>
               <br><br>
               <%= f.submit("", :type => :image, :src => "/assets/next_button.png", :class => "next-button", :id => 'button_3', :style => "display: none;")  %>
@@ -52,7 +52,9 @@
           </div>
           <div class="item">
             <div class="content-inner">
-              Need some content here.
+
+              <h1 class="title-setup">Thank you!</h1>
+              We'll be in touch soon.
             </div>
           </div>
           <!-- Carousel nav -->
@@ -63,7 +65,9 @@
     </div>
     <div class="span1"></div>
   </div>
-  <div class="span12"></div>
+  <div class="span6"></div>
+  <div class="span5"><div class="fine-print">A 5% fee is applied to all transactions</div></div>
+  <div class="span1"></div>
 </div>
 
 <% end %>

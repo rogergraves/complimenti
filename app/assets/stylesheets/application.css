@@ -28,6 +28,7 @@ h1 {
 
 .title-setup {
     font-family: 'Oleo Script Swash Caps', cursive;
+    color: #666666;
 }
 
 .complimenti-title {
@@ -93,7 +94,11 @@ h1 {
 }
 
 .fine-print {
-    font-size: 10px;
+    font-size: 13px;
+    display: block;
+    /*background-image: url('/assets/modal_background.png');*/
+    text-align: center;
+    font-family: 'Oleo Script Swash Caps', cursive;
 }
 
 .carousel {

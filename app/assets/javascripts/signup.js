@@ -12,8 +12,23 @@ $(document).ready(function() {
         }
     }
 
+    var makeButtonVisibleOfFocus = function() {
+        console.log("makeButtonVisibleOfFocus called, event_type: "+$("#event_type").val()+" and number_of_donors: ", $('#number_of_donors').val());
+        if($("#event_type").val() && !$('#number_of_donors').val()) {
+            $('#number_of_donors').focus();
+        } else {
+            makeButtonVisible();
+        }
+    }
+
     $( "#event_type" ).autocomplete({ source: [ "Wedding", "Bar Mitzvah", "Graduation", "Birthday" ]
-        , minLength: 0, change: makeButtonVisible, select: makeButtonVisible }).focus(function () {
+        , minLength: 0, change: makeButtonVisible, select: function(event, ui) {
+            if(!$('#number_of_donors').val()) {
+                $('#number_of_donors').focus();
+            } else {
+                $('#button_2').show();
+            }
+        } }).focus(function () {
         $(this).autocomplete("search");
     });
 
@@ -22,17 +37,19 @@ $(document).ready(function() {
     $("#email").keyup(makeButtonVisible);
 
     $("#button_1").click(function() {
-        $("#carousel-inner").removeClass("red-border")
-        $("#carousel-inner").addClass("green-border")
+        $("#carousel-inner").removeClass("red-border");
+        $("#carousel-inner").addClass("green-border");
     });
     $("#button_2").click(function() {
-        $("#carousel-inner").removeClass("green-border")
-        $("#carousel-inner").addClass("red-border")
+        $("#carousel-inner").removeClass("green-border");
+        $("#carousel-inner").addClass("red-border");
+        console.info("button_2 pushed");
+        $("#email").focus();
     });
     $("#button_3").click(function() {
         $('.carousel').carousel('next');
-        $("#carousel-inner").removeClass("red-border")
-        $("#carousel-inner").addClass("green-border")
+        $("#carousel-inner").removeClass("red-border");
+        $("#carousel-inner").addClass("green-border");
     });
 
 });
