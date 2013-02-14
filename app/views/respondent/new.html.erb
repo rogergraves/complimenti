@@ -33,8 +33,8 @@
               <%= f.label :event, "Event type:", :class=>' main-text' %>
               <%= f.text_field :event, :placeholder => "event type", :id => "event_type" %>
               <br><br>
-              <%= f.label :number_of_donors, "How many invitations will you need?", :class=>' main-text' %>
-              <%= f.text_field :number_of_donors, :placeholder => "# of invitees", :id => 'number_of_donors' %>
+              <%= f.label :number_of_donors, "Number of planned guests", :class=>' main-text' %>
+              <%= f.text_field :number_of_donors, :placeholder => "# of guests", :id => 'number_of_donors' %>
               <br><br>
               <div class="next-button">
                 <a href="#myCarousel" data-slide="next"><%= image_tag('/assets/next_button.png', :id => 'button_2', :style => "display: none;") %></a>
@@ -43,7 +43,8 @@
           </div>
           <div class="item">
             <div class="content-inner">
-              <p class="main-text"><span class="complimenti-title">Complimenti</span> is currently under development. We'll let you know once it launches.</p>
+              <p class="main-text"><span class="complimenti-title">Complimenti</span> is almost ready. We'll let you
+                know once it launches.</p>
               <%= f.label :email, "Email Address", :class=>' main-text' %>
               <%= f.text_field :email, :placeholder => "my_name@something.com", :id => 'email' %>
               <br><br>
