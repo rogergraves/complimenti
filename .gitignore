@@ -14,7 +14,7 @@
 /public/system/*
 
 # Ignore annoying mac invisible files
-/.DS_Store
+.DS_Store
 
 # Ignore uploaded files
 /public/uploads/*

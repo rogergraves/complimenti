@@ -55,6 +55,35 @@ h1 {
     margin-bottom: 5px;
 }
 
+.back-button {
+    float: left;
+}
+
+.tree {
+    background-image: url('/assets/tree_large.png');
+    height: 450px;
+    width: 432px;
+    background-repeat: no-repeat;
+}
+
+.bubble {
+    position: absolute;
+}
+.bubble-1 {
+    top: 155px;
+    left: 425px;
+    display: none;
+}
+.bubble-2 {
+    top: 266px;
+    left: 530px;
+    display: none;
+}
+.bubble-3 {
+    top: 224px;
+    left: 280px;
+    display: none;
+}
 .center {
     align: center;
 }

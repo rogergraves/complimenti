@@ -13,7 +13,11 @@
   <div class="row">
     <div class="span1"></div>
     <div class="span5">
-      <%= image_tag('/assets/tree.png') %>
+      <div class="tree">
+        <div class="bubble bubble-1"><%= image_tag("bubble1.png") %></div>
+        <div class="bubble bubble-2"><%= image_tag("bubble2.png") %></div>
+        <div class="bubble bubble-3"><%= image_tag("bubble3.png") %></div>
+      </div>
     </div>
     <div class="span5 center">
       <div id="myCarousel" class="carousel slide">
@@ -35,6 +39,9 @@
               </p>
               <br><br>
               <a href="#myCarousel" data-slide="next"><%= image_tag('/assets/next_button.png', :id => 'button_4', :style => "float: right;") %></a>
+            </div>
+            <div class="back-button">
+              <a data-slide="prev">back</a>
             </div>
           </div>
           <div class="item">
