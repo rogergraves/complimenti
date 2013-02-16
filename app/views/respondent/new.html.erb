@@ -38,7 +38,9 @@
                 Your complimenti tree starts as baby sappling. As your guests donate money to your tree it grows.
               </p>
               <br><br>
-              <a href="#myCarousel" data-slide="next"><%= image_tag('/assets/next_button.png', :id => 'button_4', :style => "float: right;") %></a>
+              <div class="next-button">
+                <a href="#myCarousel" data-slide="next"><%= image_tag('/assets/next_button.png', :id => 'button_2', :style => "float: right;") %></a>
+              </div>
             </div>
             <div class="back-button">
               <a data-slide="prev">back</a>
@@ -53,7 +55,7 @@
               <%= f.text_field :number_of_donors, :placeholder => "# of guests", :id => 'number_of_donors' %>
               <br><br>
               <div class="next-button">
-                <a href="#myCarousel" data-slide="next"><%= image_tag('/assets/next_button.png', :id => 'button_2', :style => "display: none;") %></a>
+                <a href="#myCarousel" data-slide="next"><%= image_tag('/assets/next_button.png', :id => 'button_3', :style => "display: none;") %></a>
               </div>
             </div>
           </div>
@@ -64,7 +66,7 @@
               <%= f.label :email, "Email Address", :class=>' main-text' %>
               <%= f.text_field :email, :placeholder => "my_name@something.com", :id => 'email' %>
               <br><br>
-              <%= f.submit("", :type => :image, :src => "/assets/next_button.png", :class => "next-button", :id => 'button_3', :style => "display: none;")  %>
+              <%= f.submit("", :type => :image, :src => "/assets/next_button.png", :class => "next-button", :id => 'button_4', :style => "display: none;")  %>
             </div>
           </div>
           <div class="item">

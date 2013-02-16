@@ -5,9 +5,9 @@ $(document).ready(function() {
 
     var makeButtonVisible = function() {
         if($("#event_type").val() && $('#number_of_donors').val()) {
-            $('#button_2').show();
+            $('#button_3').show();
             if($("#email").val()) {
-                $('#button_3').show();
+                $('#button_4').show();
             }
         }
     }
@@ -25,7 +25,7 @@ $(document).ready(function() {
             if(!$('#number_of_donors').val()) {
                 $('#number_of_donors').focus();
             } else {
-                $('#button_2').show();
+                $('#button_4').show();
             }
         } }).focus(function () {
         $(this).autocomplete("search");
@@ -41,17 +41,23 @@ $(document).ready(function() {
         growTree();
     });
     $("#button_2").click(function() {
+        $('.carousel').carousel('next');
         $("#carousel-inner").removeClass("green-border");
         $("#carousel-inner").addClass("red-border");
-        console.info("button_2 pushed");
-        $("#email").focus();
     });
     $("#button_3").click(function() {
+        $("#carousel-inner").removeClass("red-border");
+        $("#carousel-inner").addClass("green-border");
+        $("#email").focus();
+    });
+    $("#button_4").click(function() {
         $('.carousel').carousel('next');
         $("#carousel-inner").removeClass("red-border");
         $("#carousel-inner").addClass("green-border");
     });
 
+
+    var skip_transitions = false;
 
     var swapImage = function(variations, timing) {
         timing = typeof timing !== 'undefined' ? timing : 4000;
@@ -83,8 +89,11 @@ $(document).ready(function() {
     };
 
     var growTree = function() {
-        var variations = ['large', 'medium', 'small'];
-        swapImage(variations, 500);
+        if(!skip_transitions) {
+            skip_transitions = true;
+            var variations = ['large', 'medium', 'small'];
+            swapImage(variations, 500);
+        }
     };
 
 });
