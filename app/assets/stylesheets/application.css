@@ -59,29 +59,22 @@ h1 {
     float: left;
 }
 
-.tree {
-    background-image: url('/assets/tree_large.png');
-    height: 450px;
-    width: 432px;
-    background-repeat: no-repeat;
-}
-
 .bubble {
     position: absolute;
 }
 .bubble-1 {
-    top: 155px;
-    left: 425px;
+    top: 21%;
+    left: 36%;
     display: none;
 }
 .bubble-2 {
-    top: 266px;
-    left: 530px;
+    top: 45%;
+    left: 40%;
     display: none;
 }
 .bubble-3 {
-    top: 224px;
-    left: 280px;
+    top: 31%;
+    left: 21%;
     display: none;
 }
 .center {
@@ -143,7 +136,7 @@ h1 {
     -moz-border-radius: 10px;
     border-radius: 10px;
     box-shadow: 0px 0px 5px #000000;
-    height: 220px;
+    min-height: 75%;
 }
 
 .red-border {
