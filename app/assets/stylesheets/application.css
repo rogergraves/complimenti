@@ -63,18 +63,18 @@ h1 {
     position: absolute;
 }
 .bubble-1 {
-    top: 155px;
-    left: 425px;
+    top: 21%;
+    left: 36%;
     display: none;
 }
 .bubble-2 {
-    top: 266px;
-    left: 530px;
+    top: 45%;
+    left: 40%;
     display: none;
 }
 .bubble-3 {
-    top: 224px;
-    left: 280px;
+    top: 31%;
+    left: 21%;
     display: none;
 }
 .center {

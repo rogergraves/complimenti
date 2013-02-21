@@ -56,7 +56,6 @@ $(document).ready(function() {
         $("#carousel-inner").addClass("green-border");
     });
 
-
     var skip_transitions = false;
 
     var swapImage = function(variations, timing) {
@@ -68,22 +67,12 @@ $(document).ready(function() {
 
         setTimeout(function() {
             image.fadeOut(1000, function () {
-                image.css("background", "url('/assets/tree_"+variation+".png')");
+                image.attr("src", "/assets/tree_"+variation+".png");
                 image.fadeIn(1000);
             });
 
             if(variations.length > 0) {
                 swapImage(variations);
-            } else {
-                setTimeout(function() {
-                    $('.bubble-1').show();
-                }, 3000);
-                setTimeout(function() {
-                    $('.bubble-2').show();
-                }, 4000);
-                setTimeout(function() {
-                    $('.bubble-3').show();
-                }, 5000);
             }
         }, timing);
     };
@@ -91,7 +80,7 @@ $(document).ready(function() {
     var growTree = function() {
         if(!skip_transitions) {
             skip_transitions = true;
-            var variations = ['large', 'medium', 'small'];
+            var variations = ['donations', 'medium', 'small'];
             swapImage(variations, 500);
         }
     };
