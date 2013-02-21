@@ -6,7 +6,6 @@
     <div class="span11">
       <h1>
         <span class="title-setup">Set up your <span class="complimenti-title">Complimenti Tree</span></span>
-
       </h1>
     </div>
   </div>
@@ -34,12 +33,12 @@
                 Your complimenti tree starts as baby sappling. As your guests donate money to your tree it grows.
               </p>
               <br><br>
+              <div class="back-button">
+                <a href="#myCarousel" data-slide="prev">back</a>
+              </div>
               <div class="next-button">
                 <a href="#myCarousel" data-slide="next"><%= image_tag('/assets/next_button.png', :id => 'button_2', :style => "float: right;") %></a>
               </div>
-            </div>
-            <div class="back-button">
-              <a data-slide="prev">back</a>
             </div>
           </div>
           <div class="item">
@@ -50,6 +49,9 @@
               <%= f.label :number_of_donors, "Number of planned guests", :class=>' main-text' %>
               <%= f.text_field :number_of_donors, :placeholder => "# of guests", :id => 'number_of_donors' %>
               <br><br>
+              <div class="back-button">
+                <a href="#myCarousel" data-slide="prev">back</a>
+              </div>
               <div class="next-button">
                 <a href="#myCarousel" data-slide="next"><%= image_tag('/assets/next_button.png', :id => 'button_3', :style => "display: none;") %></a>
               </div>
@@ -62,6 +64,9 @@
               <%= f.label :email, "Email Address", :class=>' main-text' %>
               <%= f.text_field :email, :placeholder => "my_name@something.com", :id => 'email' %>
               <br><br>
+              <div class="back-button">
+                <a href="#myCarousel" data-slide="prev">back</a>
+              </div>
               <%= f.submit("", :type => :image, :src => "/assets/next_button.png", :class => "next-button", :id => 'button_4', :style => "display: none;")  %>
             </div>
           </div>

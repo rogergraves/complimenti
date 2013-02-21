@@ -57,6 +57,8 @@ h1 {
 
 .back-button {
     float: left;
+    margin-left: 5px;
+    margin-top: 8px;
 }
 
 .bubble {
