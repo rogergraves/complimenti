@@ -1,6 +1,6 @@
 class RespondentController < ApplicationController
   def new
-    @respondent = Respondent.create(:source => params[:t])
+    @respondent = Respondent.create(:source => params[:id])
   end
 
   def create
